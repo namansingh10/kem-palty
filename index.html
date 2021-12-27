@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" href="/css/scroll.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <!-- <link rel="stylesheet" href="/css/emojionearea.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/js/emojionearea.min.js"></script> -->
+</head>
+<body>
+<section class="chatsection">
+    <div class="brand">
+        <img src="/logo.png" height="35">
+        <h1>CORTARÁ</h1>
+        <div class="popup" id="popupon">
+            <div class="overlay"></div>
+            <div class="content">
+                <img src="/exit.png" class="exit" onclick="togglepopup()" height="20">
+                <h2>Choose a place:</h2><input
+      id="pac-input"
+      class="controls"
+      type="text"
+      placeholder="Search Box"
+    /><br>
+    <div id="map"></div>
+    <!-- <button class="conbtn" onclick="alert(document.getElementById('pac-input').value)">CONFIRM</button> -->
+    <button class="conbtn" onclick="place(),togglepopup()">CONFIRM</button>
+            </div>
+        </div>
+        <button class="wannabtn" onclick="togglepopup()">Wanna Date?</button>
+    </div>
+    <div class="msgarea">
+    </div>
+    <div>
+        <textarea id="textarea" cols="30" rows="0.7" placeholder="Write a message..."></textarea>
+    </div>
+</section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/client.js"></script>
+    <script src="/js/maps.js"></script>
+    <!-- <script>
+        $(document).ready(function() {
+            $("#textarea").emojioneArea ({
+            });
+        })
+    </script> -->
+    <script>
+        function togglepopup() {
+            document.getElementById("popupon").classList.toggle("active");
+        }
+    </script>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyODu1hxuLZz0sQYMisJoTaywgEsVgjE4&callback=initAutocomplete&libraries=places&v=weekly"
+      async
+    ></script>
+</body>
+</html>
