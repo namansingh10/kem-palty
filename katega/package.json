@@ -1,0 +1,23 @@
+{
+  "name": "dating",
+  "version": "1.0.0",
+  "description": "to date people",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "katega"
+  ],
+  "author": "harsh",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.10",
+    "pug": "^3.0.2",
+    "slugify": "^1.6.1"
+  }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>login</title>
+    style
+       include ../css files/signup.css 
+</head>
+
+<body>
+    <div class="loginbox">
+        <h1>Create Your Account</h1>
+        <form action="/signup" method="POST" name="myform" onsubmit="return validateform()">
+        <div class="textbox" id = "name">
+            <i class="fa fa-bomb"></i>
+            <input type="text" placeholder="Your Full Name" name="name" value="" required>
+            <div class="formerror"><b></b></div>
+        </div>
+
+        <div class="textbox" id="email">
+            <i class="fa fa-user"></i>
+            <input type="email" placeholder="Email-Id" name="email" value="" required>
+            <div class="formerror"><b></b></div>
+        </div>
+        <div class="textbox" id="phone">
+            <i class="fa fa-phone"></i>
+            <input type="number" placeholder="Mobile Number" name="phone" value="" required>
+            <div class="formerror"><b></b></div>
+        </div>
+
+        <div class="textbox" id="password">
+            <i class="fa fa-lock"></i>
+            <input type="password" placeholder="Password" name="password" value="" required>
+            <div class="formerror"><b></b></div>
+        </div>
+        
+        <div class="textbox" id="confirm">
+            <i class="fa fa-lock"></i>
+            <input type="password" placeholder="Confirm Password" name="confirm" value="" required>
+            <div class="formerror"><b></b></div>
+        </div>
+        <input class="btn" type="submit" name="" value="Create Account">
+    </div>
+</form>
+    script
+       include ../js files/signup.js
+</body>
+
+</html>
