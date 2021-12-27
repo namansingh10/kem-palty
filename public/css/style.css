@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+section.chatsection {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 700px;
+    max-width: 90%;
+    background: #000;
+    border: 2.5px solid aqua;
+}
+
+.brand {
+    padding: 20px;
+    background: #000;
+    display: flex;
+    border-bottom: 2.5px solid aqua;
+    align-items: center;
+    /* display: grid;
+    grid-template-columns: 5% 70% 25%; */
+}
+
+.brand h1 {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.wannabtn {
+    background-color: #000;
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+    border: 1px solid aqua;
+    padding: 10px 15px 10px 15px;
+    font-weight:700;
+    margin-left: 360px;
+}
+
+.brand button:hover {
+    color: #000;
+    background-color: aqua;
+}
+
+.conbtn {
+    position: absolute;
+    left: 43%;
+    margin-top: 10px;
+    background-color: #000;
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+    border: 1px solid aqua;
+    padding: 10px 30px 10px 30px;
+    font-weight:700;
+}
+
+.msgarea {
+    height: 600px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 40px;
+    background-color: #000;
+}
+
+textarea {
+    width: 100%;
+    border: 2.5px solid aqua;
+    padding: 20px 20px 0px 20px;
+    font-size: 20px;
+    outline: none;
+    background: #000;
+    color: #fff;
+    resize: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.msg {
+    padding: 20px 40px 20px 25px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    max-width: 300px;
+    font-size: 20px;
+    position: relative;
+}
+
+.incoming {
+    background: #000;
+    color: aqua;
+    border: 2.5px solid white;
+    margin-right: auto;
+}
+
+.outgoing {
+    background: #000;
+    color: #fff;
+    margin-left: auto;
+    border: 2.5px solid aqua;
+}
+
+.msg h4 {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #fff;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+/* WANNA DATE BUTTON */
+
+.popup .overlay {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+}
+  
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    padding-bottom: 100px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 2px solid aqua;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 65%;
+    color: white;
+    background-color: #000;
+    height: 800px;
+    z-index: 2;
+}
+ 
+.popup.active .overlay {
+    display: block;
+}
+  
+.popup.active .content {
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+  
+.exit {
+    height: 25px;
+    position: absolute;
+    top: 3%;
+    right: 2%;
+    cursor: pointer;
+}
+  
+.content p {
+    margin-top: 15px;
+    margin-left: -23px;
+}
+
+.controls {
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+}
+
+  /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+#map {
+    height: 95%;
+  }
+  
+  /* Optional: Makes the sample page fill the window. */
+
+  #description {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  #infowindow-content .title {
+    font-weight: bold;
+  }
+  
+  #infowindow-content {
+    display: none;
+  }
+  
+  #map #infowindow-content {
+    display: inline;
+  }
+  
+  .pac-card {
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding:  0.5em;
+    font: 400 18px Roboto, Arial, sans-serif;
+    overflow: hidden;
+    font-family: Roboto;
+    padding: 0;
+  }
+  
+  #pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+  }
+  
+  .pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+  }
+  
+  .pac-controls label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  
+  #pac-input {
+    background-color: #fff;
+    color: #000;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 8px 11px 8px 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+  }
+  
+  #pac-input:focus {
+    border-color: #4d90fe;
+  }
+  
+  #title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+  }
+  
+  #target {
+    width: 345px;
+  }
