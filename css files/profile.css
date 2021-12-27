@@ -1,0 +1,92 @@
+body{
+    background-color: black;
+    color: aqua;
+
+}
+hr{
+    color: white;
+}
+.topconta{
+    height: 55vh;
+}
+
+.profilePic{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    border: 5px solid aqua;
+    overflow: hidden;
+}
+.profilePic:hover{
+    cursor: pointer;
+  
+}
+.profilePic img{
+    height: 250px;
+    width: 250px;
+    position: relative;
+    top: 0;
+}
+.profilePic img:hover{
+    cursor: pointer;
+}
+
+.editdetails{
+    color: white;
+    font-size: 20px;
+    font-family: roboto;
+    text-decoration: none;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+.editdetails:hover{
+    color: black;
+    background-color: aqua;
+    font-size: 20px;
+    font-family: roboto;
+    cursor: pointer;
+    border: 3px solid rgb(0, 199, 199);
+    font-weight: 500;
+}
+.editdetails i:hover{
+   color: black!important;
+}
+.profiledetailarea{
+
+}
+
+.katega{
+    border-radius: 12px;
+    border: 2px solid aqua;
+    padding: 5px 10px;
+    margin: 3px 6px;
+    color: rgb(157, 255, 255);
+}
+.katega:hover{
+    color: black;
+    background-color: aqua;
+    cursor: pointer;
+}
+.upload{
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.upload:hover{
+    color: aqua;
+    background-color: rgba(112, 112, 112);
+}
+i{
+    cursor: pointer;
+}
+.maxa{
+    height: auto;
+    width: 400px;
+}
+.model-title{
+    color: black;
+}
+
+.model-body{
+    color: black;
+}

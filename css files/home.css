@@ -1,0 +1,86 @@
+body{
+    background-color: black;
+    color: aqua;
+}
+.navbar a{
+    color: aqua;
+    font-family: roboto;
+}
+.navbar a:hover{
+    color: rgb(0, 139, 139);
+}
+.matchbox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+    width: 180px;
+    height: 250px;
+    border-radius: 10px;
+    border: 2px solid aqua;
+}
+.not-intrested{
+    flex-direction: row-reverse;
+    padding: 5px;
+    text-decoration: none;
+}
+.dp{
+    height: 93px;
+    width: 93px;
+    /* border: 3px solid aquamarine; */
+    border-radius: 50%!important;
+}
+.khabar{
+    margin: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid aquamarine;
+}
+.Intrested{
+    color: rgb(255, 81, 110);
+    border-color: rgb(255, 81, 110);
+}
+.Intrested:hover{
+    background-color: rgb(255, 40, 75);
+    border-color: rgb(255, 141, 160);
+}
+.post{
+    width: 90%;
+    height: 350px;
+    background-color: white;
+    margin: 10px;
+}
+.post .media{
+    overflow-x: hidden;
+}
+.post .media img{
+}
+.post .media video{
+    
+}
+.caption{
+    width: 30%!important;
+}
+.post-bio p{
+    margin: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar{
+    border-top: 2px solid aqua;
+    border-bottom: 2px solid aqua;
+    border-left: 2px solid aqua;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+.side-item{
+    margin: 10px 10px;
+    padding: 5px;
+}
+.side-item a{
+    color: aqua;
+    border: 1px solid aqua;
+}
+.side-item a:hover{
+    color: black;
+    background-color: aqua;
+}
