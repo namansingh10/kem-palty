@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Signup</title>
+    style
+       include ../css files/signup.css 
+</head>
+
+<body>
+    <div class="loginbox">
+        <h1>Create Your Account</h1>
+        <form action="/signup" method="POST" name="myform" onsubmit="return validateform()">
+        <div class="textbox" id = "name">
+            <i class="fa fa-bomb"></i>
+            <input type="text" placeholder="Your Full Name" name="name" value="" id="inname" required>
+            <div class="formerror"><b></b></div>
+        </div>
+
+        <div class="textbox" id="email">
+            <i class="fa fa-user"></i>
+            <input type="email" placeholder="Email-Id" name="email" value="" id="inemail" required>
+            <div class="formerror"><b></b></div>
+        </div>
+        <div class="textbox" id="phone">
+            <i class="fa fa-phone"></i>
+            <input type="number" placeholder="Mobile Number" name="phone" value="" id="inphone" required>
+            <div class="formerror"><b></b></div>
+        </div>
+
+        <div class="textbox" id="gender">
+            <i class="fa fa-mars"></i>
+            <select name="gender" id="ingender">
+                <option value="male"> Male </option>
+                <option value="female"> female </option>
+            </select>
+            <div class="formerror"><b></b></div>
+        </div>
+
+        <div class="textbox" id="password">
+            <i class="fa fa-lock"></i>
+            <input type="password" placeholder="Password" name="password" value="" id='inpassword' required>
+            <div class="formerror"><b></b></div>
+        </div>
+        
+        <div class="textbox" id="confirm">
+            <i class="fa fa-lock"></i>
+            <input type="password" placeholder="Confirm Password" name="confirm" value="" id="inc_password" required>
+            <div class="formerror"><b></b></div>
+        </div>
+    </form>
+        <button class="btn" onclick="submitform()"> Create Account </button>
+
+    </div>
+
+    script
+       include ../js files/signup.js
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
